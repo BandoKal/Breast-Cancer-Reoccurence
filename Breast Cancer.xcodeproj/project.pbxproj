@@ -12,6 +12,7 @@
 		7AB80C1420D80E8300EF7C5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB80C1220D80E8300EF7C5C /* Main.storyboard */; };
 		7AB80C1620D80E8500EF7C5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB80C1520D80E8500EF7C5C /* Assets.xcassets */; };
 		7AB80C1920D80E8500EF7C5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB80C1720D80E8500EF7C5C /* LaunchScreen.storyboard */; };
+		7AB80C2120D83AA800EF7C5C /* BreastCancer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7AB80C2020D83AA800EF7C5C /* BreastCancer.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7AB80C1520D80E8500EF7C5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AB80C1820D80E8500EF7C5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AB80C1A20D80E8500EF7C5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AB80C2020D83AA800EF7C5C /* BreastCancer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BreastCancer.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				7AB80C0E20D80E8300EF7C5C /* AppDelegate.swift */,
 				7AB80C1020D80E8300EF7C5C /* ViewController.swift */,
+				7AB80C2020D83AA800EF7C5C /* BreastCancer.mlmodel */,
 				7AB80C1220D80E8300EF7C5C /* Main.storyboard */,
 				7AB80C1520D80E8500EF7C5C /* Assets.xcassets */,
 				7AB80C1720D80E8500EF7C5C /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				7AB80C1120D80E8300EF7C5C /* ViewController.swift in Sources */,
 				7AB80C0F20D80E8300EF7C5C /* AppDelegate.swift in Sources */,
+				7AB80C2120D83AA800EF7C5C /* BreastCancer.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,12 +285,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P6995GRNQ;
 				INFOPLIST_FILE = "Breast Cancer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hcahealthcare.Breast-Cancer";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BandoKal.Breast-Cancer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,12 +304,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P6995GRNQ;
 				INFOPLIST_FILE = "Breast Cancer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hcahealthcare.Breast-Cancer";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BandoKal.Breast-Cancer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

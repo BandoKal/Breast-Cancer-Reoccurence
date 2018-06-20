@@ -1,24 +1,343 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qps-Im-sQs">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="Cki-vg-l3g">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <tableViewController id="Qps-Im-sQs" customClass="ViewController" customModule="Breast_Cancer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QQi-OV-xNP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="ga6-g2-9Ad">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="165" id="JJz-8L-vSn">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="165"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JJz-8L-vSn" id="Ab8-Bi-8v7">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="164.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="DXa-vR-7lC">
+                                                    <rect key="frame" x="16" y="11" width="343" height="143"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Predicted chance of recurrence" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAA-xa-XNk">
+                                                            <rect key="frame" x="0.0" y="0.0" width="343" height="38.666666666666664"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="heya" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eSF-mg-yXP">
+                                                            <rect key="frame" x="0.0" y="52.666666666666664" width="343" height="90.333333333333343"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </textView>
+                                                    </subviews>
+                                                    <viewLayoutGuide key="safeArea" id="kyU-ak-Ddh"/>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="DXa-vR-7lC" secondAttribute="bottom" id="Hw0-qh-a7r"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="DXa-vR-7lC" secondAttribute="trailing" id="eWm-W4-jk7"/>
+                                                <constraint firstItem="DXa-vR-7lC" firstAttribute="leading" secondItem="Ab8-Bi-8v7" secondAttribute="leadingMargin" id="m8E-Zm-0PB"/>
+                                                <constraint firstItem="DXa-vR-7lC" firstAttribute="top" secondItem="Ab8-Bi-8v7" secondAttribute="topMargin" id="v8D-Hc-UEG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="556" id="TSV-Fg-biV">
+                                        <rect key="frame" x="0.0" y="165" width="375" height="556"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TSV-Fg-biV" id="Ypc-7w-Wbn">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="555.66666666666663"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="H4V-RB-YyX">
+                                                    <rect key="frame" x="16" y="11" width="343" height="534"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="D9w-Sv-vkC">
+                                                            <rect key="frame" x="0.0" y="0.0" width="343" height="42"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sux-Rx-a2x">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="42"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUB-rh-XAD">
+                                                                    <rect key="frame" x="42" y="0.0" width="301" height="42"/>
+                                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <state key="normal" title="+"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="togglePicker:" destination="Qps-Im-sQs" eventType="touchUpInside" id="KRR-qh-zQD"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bzr-Oc-0Mf">
+                                                            <rect key="frame" x="0.0" y="49.666666666666664" width="343" height="0.0"/>
+                                                        </pickerView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Kvf-Cz-xgw">
+                                                            <rect key="frame" x="0.0" y="57" width="343" height="39.666666666666657"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menopause" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsI-U0-OIT">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="89.333333333333329" height="39.666666666666664"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hVi-su-41p">
+                                                                    <rect key="frame" x="101.33333333333333" y="0.0" width="241.66666666666669" height="40.666666666666664"/>
+                                                                    <segments>
+                                                                        <segment title="lt40"/>
+                                                                        <segment title="ge40"/>
+                                                                        <segment title="premeno"/>
+                                                                    </segments>
+                                                                    <connections>
+                                                                        <action selector="predict:" destination="Qps-Im-sQs" eventType="valueChanged" id="IYc-YS-yld"/>
+                                                                    </connections>
+                                                                </segmentedControl>
+                                                            </subviews>
+                                                            <viewLayoutGuide key="safeArea" id="wH5-Kw-UZX"/>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="v5v-Am-MTH">
+                                                            <rect key="frame" x="0.0" y="111.66666666666669" width="343" height="42"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tumor-size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csk-8z-yxk">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="86" height="42"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbV-MM-2MG">
+                                                                    <rect key="frame" x="98" y="0.0" width="245" height="42"/>
+                                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <state key="normal" title="Button"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="togglePicker:" destination="Qps-Im-sQs" eventType="touchUpInside" id="ZLO-c9-4l3"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <viewLayoutGuide key="safeArea" id="nt5-HJ-lEX"/>
+                                                        </stackView>
+                                                        <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jej-n8-ev9">
+                                                            <rect key="frame" x="0.0" y="161" width="343" height="0.0"/>
+                                                        </pickerView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="nyE-bI-tF0">
+                                                            <rect key="frame" x="0.0" y="168.66666666666666" width="343" height="42"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="inv-nodes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bM2-AU-g4b">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="76.666666666666671" height="42"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WF-VY-Juw">
+                                                                    <rect key="frame" x="88.666666666666671" y="0.0" width="254.33333333333331" height="42"/>
+                                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <state key="normal" title="Button"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="togglePicker:" destination="Qps-Im-sQs" eventType="touchUpInside" id="X8m-rg-xJ4"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <viewLayoutGuide key="safeArea" id="qWH-lI-ufB"/>
+                                                        </stackView>
+                                                        <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="svy-35-PJi">
+                                                            <rect key="frame" x="0.0" y="218.33333333333334" width="343" height="0.0"/>
+                                                        </pickerView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Q9m-Fp-ErO">
+                                                            <rect key="frame" x="0.0" y="225.66666666666666" width="343" height="39.666666666666657"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="node-caps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGL-a1-WeT">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="83" height="39.666666666666664"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="poF-Bq-UyY">
+                                                                    <rect key="frame" x="95" y="0.0" width="248" height="40.666666666666664"/>
+                                                                    <segments>
+                                                                        <segment title="yes"/>
+                                                                        <segment title="no"/>
+                                                                    </segments>
+                                                                    <connections>
+                                                                        <action selector="predict:" destination="Qps-Im-sQs" eventType="valueChanged" id="EPQ-Sg-0Ik"/>
+                                                                    </connections>
+                                                                </segmentedControl>
+                                                            </subviews>
+                                                            <viewLayoutGuide key="safeArea" id="nPv-79-4d4"/>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="zv2-cI-VJv">
+                                                            <rect key="frame" x="0.0" y="280.33333333333331" width="343" height="39.333333333333314"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="deg-malig" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8c8-mC-NkM">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="78.333333333333329" height="39.333333333333336"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cgn-61-Sei">
+                                                                    <rect key="frame" x="90.333333333333329" y="0.0" width="252.66666666666669" height="40.333333333333336"/>
+                                                                    <segments>
+                                                                        <segment title="1"/>
+                                                                        <segment title="2"/>
+                                                                        <segment title="3"/>
+                                                                    </segments>
+                                                                    <connections>
+                                                                        <action selector="predict:" destination="Qps-Im-sQs" eventType="valueChanged" id="CQa-jh-wIK"/>
+                                                                    </connections>
+                                                                </segmentedControl>
+                                                            </subviews>
+                                                            <viewLayoutGuide key="safeArea" id="mJ2-GS-KPo"/>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="GIB-7F-Qe5">
+                                                            <rect key="frame" x="0.0" y="334.66666666666669" width="343" height="39.333333333333314"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="breast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcJ-gh-6js">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="48.666666666666664" height="39.333333333333336"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3gA-cm-ZVj">
+                                                                    <rect key="frame" x="60.666666666666657" y="0.0" width="282.33333333333337" height="40.333333333333336"/>
+                                                                    <segments>
+                                                                        <segment title="left"/>
+                                                                        <segment title="right"/>
+                                                                    </segments>
+                                                                    <connections>
+                                                                        <action selector="predict:" destination="Qps-Im-sQs" eventType="valueChanged" id="GLm-rB-TFn"/>
+                                                                    </connections>
+                                                                </segmentedControl>
+                                                            </subviews>
+                                                            <viewLayoutGuide key="safeArea" id="4Bh-7h-b8M"/>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="IYI-ff-EFZ">
+                                                            <rect key="frame" x="0.0" y="389" width="343" height="42"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="breast-quad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42l-zg-hrB">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="94.333333333333329" height="42"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9M5-Ng-H5J">
+                                                                    <rect key="frame" x="106.33333333333333" y="0.0" width="236.66666666666669" height="42"/>
+                                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <state key="normal" title="Button"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="togglePicker:" destination="Qps-Im-sQs" eventType="touchUpInside" id="GTk-8p-8KV"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <viewLayoutGuide key="safeArea" id="Xkt-dg-0Xb"/>
+                                                        </stackView>
+                                                        <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lU9-eM-Rsh">
+                                                            <rect key="frame" x="0.0" y="438.66666666666669" width="343" height="0.0"/>
+                                                        </pickerView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ExA-xU-ccx">
+                                                            <rect key="frame" x="0.0" y="446" width="343" height="88"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="irradiate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5d-Lf-ZVs">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="63" height="88"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="E5T-TV-KGd">
+                                                                    <rect key="frame" x="75" y="0.0" width="268" height="89"/>
+                                                                    <segments>
+                                                                        <segment title="yes"/>
+                                                                        <segment title="no"/>
+                                                                    </segments>
+                                                                    <connections>
+                                                                        <action selector="predict:" destination="Qps-Im-sQs" eventType="valueChanged" id="Rdc-ps-jrt"/>
+                                                                    </connections>
+                                                                </segmentedControl>
+                                                            </subviews>
+                                                            <viewLayoutGuide key="safeArea" id="Ed6-KH-h5R"/>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="H4V-RB-YyX" firstAttribute="top" secondItem="Ypc-7w-Wbn" secondAttribute="topMargin" id="Xc5-qQ-amI"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="H4V-RB-YyX" secondAttribute="trailing" id="Ypx-qa-aJC"/>
+                                                <constraint firstItem="H4V-RB-YyX" firstAttribute="leading" secondItem="Ypc-7w-Wbn" secondAttribute="leadingMargin" id="ja2-cI-tqS"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="H4V-RB-YyX" secondAttribute="bottom" id="zTM-ct-GAb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Qps-Im-sQs" id="NqD-6L-1AD"/>
+                            <outlet property="delegate" destination="Qps-Im-sQs" id="4x2-ua-YRA"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="agePicker" destination="Bzr-Oc-0Mf" id="pfZ-4Q-fJt"/>
+                        <outlet property="ageValue" destination="QUB-rh-XAD" id="m27-do-l47"/>
+                        <outlet property="breastSegement" destination="3gA-cm-ZVj" id="LEI-Dp-wOg"/>
+                        <outlet property="invPickerview" destination="svy-35-PJi" id="UG5-Hv-CB5"/>
+                        <outlet property="invValue" destination="4WF-VY-Juw" id="Nxm-xV-rX3"/>
+                        <outlet property="irradiateSegment" destination="E5T-TV-KGd" id="QWP-W4-iIy"/>
+                        <outlet property="maligSegment" destination="cgn-61-Sei" id="6hg-O5-gql"/>
+                        <outlet property="menopauseSegment" destination="hVi-su-41p" id="gT6-PY-fGu"/>
+                        <outlet property="nodeCapSegment" destination="poF-Bq-UyY" id="O1b-oJ-od4"/>
+                        <outlet property="quadPickerview" destination="lU9-eM-Rsh" id="SO0-cq-BKu"/>
+                        <outlet property="quadValue" destination="9M5-Ng-H5J" id="jpK-9L-02f"/>
+                        <outlet property="resultTextView" destination="eSF-mg-yXP" id="wcE-fB-Lyn"/>
+                        <outlet property="tumorPickerview" destination="jej-n8-ev9" id="lwr-fs-6Ao"/>
+                        <outlet property="tumorValue" destination="ZbV-MM-2MG" id="sas-cv-Dlz"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gpW-Lt-QVK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="129.31034482758622"/>
         </scene>
     </scenes>
 </document>
